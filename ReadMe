@@ -1,45 +1,98 @@
 https://github.com/KRameshDev/go-task-manager-api
-# 📝 Go Task Manager API
+# 🧩 Task Manager API (Go + Gorilla Mux)
 
-A simple RESTful API built using **Go (Golang)** and **Gorilla Mux** to manage tasks — Create, Read, Update, and Delete (CRUD).  
-Perfect beginner-friendly project to learn backend development using Go.
-
----
-
-## 🚀 Features
-
-✅ Create a new task  
-✅ Get all tasks  
-✅ Update a task  
-✅ Delete a task  
-✅ Uses in-memory storage (no database needed)
+A simple **RESTful API** built with **Go (Golang)** and **Gorilla Mux** to perform CRUD (Create, Read, Update, Delete) operations on tasks.
 
 ---
 
-## 🏗️ Project Structure
+## 🚀 Overview
+The **Task Manager API** is designed to manage a list of tasks with basic operations such as adding new tasks, updating existing ones, retrieving task details, and deleting tasks.  
+It’s a great beginner-friendly project for learning **Go web development** and understanding how to structure an API in Go.
 
+---
+
+## ⚙️ Tech Stack
+- **Language:** Go (Golang)
+- **Framework:** Gorilla Mux
+- **Architecture:** RESTful API
+- **Data Format:** JSON
+- **Tools:** Go modules, Postman (for testing)
+
+---
+## 📁 Project Structure
 go-task-manager-api/
-├── main.go # Core Go API source code
-└── go.mod # Go module and dependencies
+├── main.go # Main application file with routes and handlers
+└── go.mod # Go module dependencies
 
 yaml
 Copy code
 
 ---
 
-## ⚙️ Installation & Setup
+## 🧠 Features
+- 🆕 Create new tasks  
+- 📋 Retrieve all tasks  
+- 🔍 Retrieve a task by ID  
+- ✏️ Update an existing task  
+- ❌ Delete a task  
 
-### 1️⃣ Clone this repository
+---
 
-```bash
+## 🔗 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | `/tasks` | Get all tasks |
+| GET | `/tasks/{id}` | Get a task by ID |
+| POST | `/tasks` | Create a new task |
+| PUT | `/tasks/{id}` | Update a task |
+| DELETE | `/tasks/{id}` | Delete a task |
+
+---
+
+## 🧾 Sample Task Object
+```json
+{
+  "id": 1,
+  "title": "Learn Go",
+  "description": "Understand basics of Go and REST API",
+  "completed": false
+}
+🧪 How to Run Locally
+Clone the repository
+
+bash
+Copy code
 git clone https://github.com/<your-username>/go-task-manager-api.git
 cd go-task-manager-api
-2️⃣ Initialize Go module
+Install dependencies
+
 bash
 Copy code
 go mod tidy
-3️⃣ Run the server
+Run the application
+
 bash
 Copy code
 go run main.go
-The API will start on http://localhost:8080
+Test the endpoints
+Use Postman or curl to test:
+
+bash
+Copy code
+curl http://localhost:8080/tasks
+🎯 Learning Outcomes
+Built a REST API in Go using Gorilla Mux.
+
+Learned about HTTP routing, structs, and JSON serialization.
+
+Understood Go modules and how to structure a Go project.
+
+Gained confidence with API testing using Postman.
+
+📘 Future Enhancements
+Add database support (PostgreSQL or MongoDB)
+
+Implement JWT-based authentication
+
+Add filtering and pagination
