@@ -1,1 +1,45 @@
 https://github.com/KRameshDev/go-task-manager-api
+# 📝 Go Task Manager API
+
+A simple RESTful API built using **Go (Golang)** and **Gorilla Mux** to manage tasks — Create, Read, Update, and Delete (CRUD).  
+Perfect beginner-friendly project to learn backend development using Go.
+
+---
+
+## 🚀 Features
+
+✅ Create a new task  
+✅ Get all tasks  
+✅ Update a task  
+✅ Delete a task  
+✅ Uses in-memory storage (no database needed)
+
+---
+
+## 🏗️ Project Structure
+
+go-task-manager-api/
+├── main.go # Core Go API source code
+└── go.mod # Go module and dependencies
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone this repository
+
+```bash
+git clone https://github.com/<your-username>/go-task-manager-api.git
+cd go-task-manager-api
+2️⃣ Initialize Go module
+bash
+Copy code
+go mod tidy
+3️⃣ Run the server
+bash
+Copy code
+go run main.go
+The API will start on http://localhost:8080
