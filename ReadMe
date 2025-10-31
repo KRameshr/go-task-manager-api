@@ -63,7 +63,7 @@ Clone the repository
 
 bash
 Copy code
-git clone https://github.com/KRameshDev/go-task-manager-api.git
+git clone https://github.com/KRameshr/go-task-manager-api.git
 cd go-task-manager-api
 Install dependencies
 
